@@ -1,0 +1,8 @@
+topic,label,Treatment pre-launch,Treatment post-launch,Control pre-event,Control post-event
+1,Service Complaints,42.8,21.7,59.2,24.9
+2,Product Quality & Durability,25.4,15.3,18.0,16.9
+3,Delivery & Fit,10.0,18.5,7.5,35.5
+4,Service & Experience,4.7,7.5,9.3,15.3
+5,Dutch-language reviews,4.0,17.3,0.1,0.7
+6,French-language reviews,5.1,12.6,0.9,3.9
+7,German-language reviews,8.0,7.0,5.1,2.8

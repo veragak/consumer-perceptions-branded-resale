@@ -1,0 +1,5 @@
+group_period,n,mean_rating,sd_rating,mean_sust,sd_sust,mean_vader,sd_vader
+Treatment: pre-launch,5457,2.2947,1.7715,0.0775,0.3082,0.0161,0.563
+Treatment: post-launch,21399,3.3285,1.8684,0.0633,0.2944,0.1289,0.5098
+Control: pre-event,3798,2.1277,1.706,0.1374,0.4556,-1e-4,0.5927
+Control: post-event,19082,3.6094,1.7967,0.0883,0.3414,0.3304,0.5442

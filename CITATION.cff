@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the thesis."
+title: "Consumer Perceptions of Branded Resale Channels: The Role of Design Features in Balancing Sustainability and Value"
+type: thesis
+authors:
+  - family-names: "Gak Anagrova"
+    given-names: "Vera"
+    affiliation: "Erasmus University Rotterdam"
+date-released: "2026-07-01"
+license: MIT
+keywords:
+  - branded resale
+  - Trustpilot
+  - synthetic difference-in-differences
+  - causal inference
+  - sustainability signalling

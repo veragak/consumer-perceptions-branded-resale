@@ -1,0 +1,4 @@
+"outcome","n_brands","overall_att","overall_se","p_value"
+"rating",19,-0.0779,0.0963,0.4187
+"sust_score",19,-0.0184,0.0094,0.0516
+"value_vader",19,-0.1034,0.0328,0.0016

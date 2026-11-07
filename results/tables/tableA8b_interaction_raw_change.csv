@@ -1,0 +1,9 @@
+model,variable,beta,se,t,p,p_normal,ci_lo,ci_hi,n,r2,adj_r2
+delta_rating interaction,(Intercept),2.3062,3.2297,0.7141,0.4915,0.4752,-4.89,9.5024,18,0.6074,0.3325
+delta_rating interaction,integration,1.0459,0.7143,1.4643,0.1738,0.1431,-0.5456,2.6374,18,0.6074,0.3325
+delta_rating interaction,messaging,0.612,0.5807,1.054,0.3167,0.2919,-0.6818,1.9058,18,0.6074,0.3325
+delta_rating interaction,int_x_msg,-0.4069,0.2458,-1.6555,0.1288,0.0978,-0.9544,0.1407,18,0.6074,0.3325
+delta_rating interaction,discount,-0.0612,0.0326,-1.8767,0.09,0.0606,-0.1338,0.0115,18,0.6074,0.3325
+delta_rating interaction,services,0.113,0.4475,0.2526,0.8057,0.8006,-0.8841,1.1102,18,0.6074,0.3325
+delta_rating interaction,seg_outdoor,-0.8374,0.7455,-1.1232,0.2876,0.2613,-2.4984,0.8237,18,0.6074,0.3325
+delta_rating interaction,seg_premium,-0.6088,0.6068,-1.0032,0.3394,0.3157,-1.9609,0.7433,18,0.6074,0.3325

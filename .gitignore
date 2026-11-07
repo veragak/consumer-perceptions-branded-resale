@@ -1,0 +1,10 @@
+# Never publish: raw review text
+private/
+.DS_Store
+__pycache__/
+*.pyc
+.Rhistory
+.RData
+.Rproj.user/
+.ipynb_checkpoints/
+.venv/

@@ -1,0 +1,22 @@
+brand,segment,launch,pre_n,post_n,study1,study2
+Studio Anneloes,contemporary_fashion,2024-02,197,3208,included,included
+Balzac Paris,contemporary_fashion,2021-11,32,1448,borderline (pre < 50),included
+Steve Madden,contemporary_fashion,2022-01,92,1145,included,included
+Armedangels,contemporary_fashion,2022-03,479,1011,included,included
+Levi's,contemporary_fashion,2020-10,288,586,included,included
+Ba&sh,contemporary_fashion,2022-11,65,568,included,included
+Soeur,contemporary_fashion,2025-02,284,298,included,included
+Sandro,contemporary_fashion,2021-10,116,235,included,included
+Maje,contemporary_fashion,2022-10,106,188,included,included
+Claudie Pierlot,contemporary_fashion,2024-02,70,40,borderline (post < 50),included
+Arc'teryx,outdoor_athletic,2019-05,0,4000,excluded (no pre-period),excluded
+The North Face,outdoor_athletic,2018-06,39,2008,borderline (pre < 50),included
+Allbirds,outdoor_athletic,2022-02,549,1451,included,included
+Aigle,outdoor_athletic,2020-10,66,953,included,included
+Lululemon,outdoor_athletic,2022-04,611,595,included,included
+Patagonia,outdoor_athletic,2013,2,366,excluded (no pre-period),excluded
+Carhartt,outdoor_athletic,2023-03,425,241,included,included
+Canada Goose,premium_fashion,2023-01,434,2047,included,included
+Hugo Boss,premium_fashion,2022-04,366,508,included,included
+Michael Kors,premium_fashion,2022-08,679,412,included,included
+Lacoste,premium_fashion,2024-12,557,91,included,included

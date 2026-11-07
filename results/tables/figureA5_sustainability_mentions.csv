@@ -1,0 +1,49 @@
+brand,group,pct_positive_sust
+Studio Anneloes,treatment,0.1
+Steve Madden,treatment,1.3
+Ted Baker,control,2.1
+Ba&sh,treatment,2.5
+Le Chameau,control,2.6
+Armedangels,treatment,3.2
+Hoka,control,3.8
+Zadig & Voltaire,control,3.9
+Jottnar,control,4.0
+Rouje,control,4.1
+The Kooples,control,4.2
+Balzac Paris,treatment,4.7
+Sézane,control,4.8
+Soeur,treatment,4.8
+Guess,control,4.9
+Under Armour,control,4.9
+Lacoste,treatment,4.9
+Dickies,control,5.2
+Levi's,treatment,5.3
+Osprey,control,5.3
+Claudie Pierlot,treatment,5.5
+Armani,control,5.7
+Salomon,control,5.8
+Maje,treatment,6.1
+Wrangler,control,6.2
+Sandro,treatment,6.6
+Fred Perry,control,6.8
+Aigle,treatment,6.9
+Berghaus,control,6.9
+Arc'teryx,treatment,7.1
+Hugo Boss,treatment,7.3
+Montane,control,7.4
+Columbia Sportswear,control,7.6
+Tommy Hilfiger,control,7.9
+Carhartt,treatment,8.0
+Lululemon,treatment,8.0
+Allbirds,treatment,8.3
+Canada Goose,treatment,8.7
+Moose Knuckles,control,8.8
+The North Face,treatment,8.8
+Michael Kors,treatment,9.6
+Tory Burch,control,10.3
+Moncler,control,13.4
+Vuori,control,14.1
+Furla,control,17.7
+Patagonia,treatment,25.0
+Rab,control,28.0
+Organic Basics,control,37.2

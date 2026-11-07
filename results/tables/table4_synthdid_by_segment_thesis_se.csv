@@ -1,0 +1,10 @@
+segment,outcome,n_brands,att,se,t,p
+contemporary_fashion,rating,10,0.297,0.1291,2.2999,0.0215
+contemporary_fashion,sust_score,10,-0.0367,0.0141,-2.6073,0.0091
+contemporary_fashion,value_vader,10,-0.0171,0.0458,-0.3734,0.7089
+outdoor_athletic,rating,5,-0.7801,0.1824,-4.2762,0
+outdoor_athletic,sust_score,5,-0.0656,0.0168,-3.8938,1e-4
+outdoor_athletic,value_vader,5,-0.2941,0.0626,-4.6942,0
+premium_fashion,rating,4,-0.1553,0.2368,-0.656,0.5119
+premium_fashion,sust_score,4,0.0795,0.0194,4.088,0
+premium_fashion,value_vader,4,-0.0657,0.0709,-0.9253,0.3548

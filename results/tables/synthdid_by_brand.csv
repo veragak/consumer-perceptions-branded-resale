@@ -1,0 +1,58 @@
+brand,outcome,att,se,p,n_pre_quarters,n_post_quarters,segment
+Aigle,rating,0.652,0.4984,0.1908,10,23,outdoor_athletic
+Allbirds,rating,0.5831,0.5328,0.2738,14,17,outdoor_athletic
+Armedangels,rating,1.3977,0.2297,0,20,18,contemporary_fashion
+Ba&sh,rating,0.6141,0.6251,0.3259,7,14,contemporary_fashion
+Balzac Paris,rating,-0.0199,0.5448,0.9708,10,19,contemporary_fashion
+Canada Goose,rating,0.4174,0.4457,0.3491,23,14,premium_fashion
+Carhartt,rating,0.3512,0.3256,0.2808,20,13,outdoor_athletic
+Claudie Pierlot,rating,-1.1319,0.5201,0.0295,24,9,contemporary_fashion
+Hugo Boss,rating,-0.0993,0.3059,0.7455,34,16,premium_fashion
+Lacoste,rating,0.0594,0.6315,0.9251,35,6,premium_fashion
+Levi's,rating,-0.7283,0.3222,0.0238,21,22,contemporary_fashion
+Lululemon,rating,-1.8312,0.2824,0,30,16,outdoor_athletic
+Maje,rating,0.2262,0.4876,0.6427,22,14,contemporary_fashion
+Michael Kors,rating,-0.976,0.4504,0.0302,21,16,premium_fashion
+Sandro,rating,0.0521,0.3087,0.8659,20,18,contemporary_fashion
+Soeur,rating,1.2566,0.5741,0.0286,24,6,contemporary_fashion
+Steve Madden,rating,-0.5692,0.5498,0.3005,11,18,contemporary_fashion
+Studio Anneloes,rating,0.5754,0.6765,0.395,4,10,contemporary_fashion
+The North Face,rating,-0.9597,0.2984,0.0013,6,32,outdoor_athletic
+Aigle,sust_score,0.0253,0.0259,0.33,10,23,outdoor_athletic
+Allbirds,sust_score,-0.1533,0.0511,0.0027,14,17,outdoor_athletic
+Armedangels,sust_score,-0.0288,0.0276,0.2973,20,18,contemporary_fashion
+Ba&sh,sust_score,0.105,0.0557,0.0594,7,14,contemporary_fashion
+Balzac Paris,sust_score,-0.018,0.0605,0.7658,10,19,contemporary_fashion
+Canada Goose,sust_score,0.1354,0.0444,0.0023,23,14,premium_fashion
+Carhartt,sust_score,-0.2248,0.0358,0,20,13,outdoor_athletic
+Claudie Pierlot,sust_score,-0.0048,0.0567,0.933,24,9,contemporary_fashion
+Hugo Boss,sust_score,0.0189,0.0277,0.495,34,16,premium_fashion
+Lacoste,sust_score,0.1579,0.0409,1e-4,35,6,premium_fashion
+Levi's,sust_score,0.022,0.0391,0.5744,21,22,contemporary_fashion
+Lululemon,sust_score,0.0109,0.0324,0.7361,30,16,outdoor_athletic
+Maje,sust_score,-0.1227,0.0435,0.0048,22,14,contemporary_fashion
+Michael Kors,sust_score,0.0633,0.0487,0.1943,21,16,premium_fashion
+Sandro,sust_score,-0.1167,0.0355,0.001,20,18,contemporary_fashion
+Soeur,sust_score,-0.0404,0.0456,0.3759,24,6,contemporary_fashion
+Steve Madden,sust_score,-0.0698,0.0424,0.0999,11,18,contemporary_fashion
+Studio Anneloes,sust_score,0.032,0.0746,0.6678,4,10,contemporary_fashion
+The North Face,sust_score,-0.0594,0.0438,0.1748,6,32,outdoor_athletic
+Aigle,value_vader,-0.047,0.1973,0.8118,10,23,outdoor_athletic
+Allbirds,value_vader,-0.092,0.1425,0.5183,14,17,outdoor_athletic
+Armedangels,value_vader,0.3503,0.164,0.0327,20,18,contemporary_fashion
+Ba&sh,value_vader,0.1817,0.1434,0.2051,7,14,contemporary_fashion
+Balzac Paris,value_vader,0.063,0.192,0.7429,10,19,contemporary_fashion
+Canada Goose,value_vader,0.2876,0.1461,0.049,23,14,premium_fashion
+Carhartt,value_vader,-0.2232,0.1727,0.1962,20,13,outdoor_athletic
+Claudie Pierlot,value_vader,0.2649,0.2025,0.191,24,9,contemporary_fashion
+Hugo Boss,value_vader,-0.2881,0.1198,0.0162,34,16,premium_fashion
+Lacoste,value_vader,0.0167,0.1952,0.9318,35,6,premium_fashion
+Levi's,value_vader,-0.3387,0.0797,0,21,22,contemporary_fashion
+Lululemon,value_vader,-0.3279,0.0956,6e-4,30,16,outdoor_athletic
+Maje,value_vader,-0.101,0.1438,0.4825,22,14,contemporary_fashion
+Michael Kors,value_vader,-0.0384,0.1314,0.7703,21,16,premium_fashion
+Sandro,value_vader,0.3145,0.1329,0.0179,20,18,contemporary_fashion
+Soeur,value_vader,0.0215,0.2192,0.9219,24,6,contemporary_fashion
+Steve Madden,value_vader,0.093,0.1161,0.4232,11,18,contemporary_fashion
+Studio Anneloes,value_vader,0.0333,0.1803,0.8533,4,10,contemporary_fashion
+The North Face,value_vader,-0.5437,0.1388,1e-4,6,32,outdoor_athletic

@@ -1,0 +1,8 @@
+# Python 3.11
+pandas>=2.0   # tested with 3.0
+numpy>=1.24
+matplotlib>=3.7
+scikit-learn>=1.3       # 04_lda_topics.py
+vaderSentiment>=3.3.2   # 02_score_reviews.py
+# Data collection only (code/01_data_collection):
+# undetected-chromedriver, selenium

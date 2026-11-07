@@ -1,0 +1,28 @@
+brand,segment,matched_to,total_reviews,volume_flag
+Armani,premium_fashion,Hugo Boss,264,Marginal
+Berghaus,outdoor_athletic,Arc'teryx / The North Face,1746,OK
+Columbia Sportswear,outdoor_athletic,Patagonia,748,OK
+Dickies,outdoor_athletic,Carhartt,172,Marginal
+Fred Perry,premium_fashion,Lacoste,146,Low
+Furla,premium_fashion,Michael Kors,198,Marginal
+Guess,contemporary_fashion,Steve Madden,878,OK
+Hoka,outdoor_athletic,Allbirds,1832,OK
+Jottnar,outdoor_athletic,Arc'teryx,99,Low
+Le Chameau,outdoor_athletic,Aigle,1817,OK
+Moncler,premium_fashion,Canada Goose,366,Marginal
+Montane,outdoor_athletic,Arc'teryx,1778,OK
+Moose Knuckles,premium_fashion,Canada Goose,194,Marginal
+Organic Basics,contemporary_fashion,Armedangels,1496,OK
+Osprey,outdoor_athletic,The North Face,1282,OK
+Rab,outdoor_athletic,Patagonia / Arc'teryx,1172,OK
+Rouje,contemporary_fashion,Balzac Paris,1084,OK
+Salomon,outdoor_athletic,Arc'teryx / Carhartt,1127,OK
+Sézane,contemporary_fashion,Ba&sh / Sandro / Maje,1855,OK
+Ted Baker,premium_fashion,Hugo Boss / Lacoste,1780,OK
+The Kooples,contemporary_fashion,Ba&sh / Sandro / Maje,720,OK
+Tommy Hilfiger,premium_fashion,Hugo Boss / Lacoste,140,Low
+Tory Burch,premium_fashion,Michael Kors,261,Marginal
+Under Armour,outdoor_athletic,Lululemon,959,OK
+Vuori,outdoor_athletic,Lululemon,99,Low
+Wrangler,contemporary_fashion,Levi's,211,Marginal
+Zadig & Voltaire,contemporary_fashion,Ba&sh / Sandro / Maje,456,Marginal

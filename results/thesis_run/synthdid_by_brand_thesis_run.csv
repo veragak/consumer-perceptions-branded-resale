@@ -1,0 +1,58 @@
+"brand","outcome","att","se","p","n_pre","n_post"
+"Aigle","rating",0.652,0.6311,0.3016,10,23
+"Allbirds","rating",0.5831,0.6257,0.3514,14,17
+"Armedangels","rating",1.3977,0.2462,0,20,18
+"Ba&sh","rating",0.6141,0.6677,0.3577,7,14
+"Balzac Paris","rating",-0.0199,0.541,0.9706,10,19
+"Canada Goose","rating",0.4174,0.508,0.4112,23,14
+"Carhartt","rating",0.3512,0.4628,0.448,20,13
+"Claudie Pierlot","rating",-1.1319,0.5515,0.0401,24,9
+"Hugo Boss","rating",-0.0993,0.3483,0.7756,34,16
+"Lacoste","rating",0.0594,0.7179,0.9341,35,6
+"Levi's","rating",-0.7283,0.2938,0.0132,21,22
+"Lululemon","rating",-1.8312,0.3163,0,30,16
+"Maje","rating",0.2262,0.4864,0.6419,22,14
+"Michael Kors","rating",-0.976,0.5147,0.0579,21,16
+"Sandro","rating",0.0521,0.3129,0.8677,20,18
+"Soeur","rating",1.2566,0.5388,0.0197,24,6
+"Steve Madden","rating",-0.5692,0.605,0.3468,11,18
+"Studio Anneloes","rating",0.5754,0.6552,0.3798,4,10
+"The North Face","rating",-0.9597,0.3113,0.002,6,32
+"Aigle","sust_score",0.0253,0.0295,0.3927,10,23
+"Allbirds","sust_score",-0.1533,0.0466,0.001,14,17
+"Armedangels","sust_score",-0.0288,0.0236,0.2217,20,18
+"Ba&sh","sust_score",0.105,0.0628,0.0943,7,14
+"Balzac Paris","sust_score",-0.018,0.0559,0.7472,10,19
+"Canada Goose","sust_score",0.1354,0.047,0.0039,23,14
+"Carhartt","sust_score",-0.2248,0.0377,0,20,13
+"Claudie Pierlot","sust_score",-0.0048,0.0607,0.9373,24,9
+"Hugo Boss","sust_score",0.0189,0.0315,0.5481,34,16
+"Lacoste","sust_score",0.1579,0.0415,1e-04,35,6
+"Levi's","sust_score",0.022,0.0514,0.6693,21,22
+"Lululemon","sust_score",0.0109,0.0417,0.7932,30,16
+"Maje","sust_score",-0.1227,0.054,0.023,22,14
+"Michael Kors","sust_score",0.0633,0.0407,0.1201,21,16
+"Sandro","sust_score",-0.1167,0.0404,0.0039,20,18
+"Soeur","sust_score",-0.0404,0.0453,0.3729,24,6
+"Steve Madden","sust_score",-0.0698,0.0466,0.1343,11,18
+"Studio Anneloes","sust_score",0.032,0.0895,0.7207,4,10
+"The North Face","sust_score",-0.0594,0.0397,0.1345,6,32
+"Aigle","value_vader",-0.047,0.2144,0.8266,10,23
+"Allbirds","value_vader",-0.092,0.1492,0.5376,14,17
+"Armedangels","value_vader",0.3503,0.1814,0.0535,20,18
+"Ba&sh","value_vader",0.1817,0.1456,0.2119,7,14
+"Balzac Paris","value_vader",0.063,0.1924,0.7434,10,19
+"Canada Goose","value_vader",0.2876,0.1589,0.0703,23,14
+"Carhartt","value_vader",-0.2232,0.1866,0.2318,20,13
+"Claudie Pierlot","value_vader",0.2649,0.2034,0.1929,24,9
+"Hugo Boss","value_vader",-0.2881,0.1127,0.0106,34,16
+"Lacoste","value_vader",0.0167,0.2032,0.9344,35,6
+"Levi's","value_vader",-0.3387,0.0816,0,21,22
+"Lululemon","value_vader",-0.3279,0.0962,7e-04,30,16
+"Maje","value_vader",-0.101,0.1516,0.5052,22,14
+"Michael Kors","value_vader",-0.0384,0.1335,0.7737,21,16
+"Sandro","value_vader",0.3145,0.1574,0.0458,20,18
+"Soeur","value_vader",0.0215,0.2023,0.9154,24,6
+"Steve Madden","value_vader",0.093,0.1283,0.4686,11,18
+"Studio Anneloes","value_vader",0.0333,0.1896,0.8604,4,10
+"The North Face","value_vader",-0.5437,0.1395,1e-04,6,32

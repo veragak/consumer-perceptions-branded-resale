@@ -1,0 +1,4 @@
+outcome,att_main,p_main,att_excl_lowvol,p_excl_lowvol
+rating,-0.0629,0.4813,-0.135,0.1407
+sust_score,-0.0169,0.0604,-0.0344,0.001
+value_vader,-0.0881,0.0054,-0.102,0.003
