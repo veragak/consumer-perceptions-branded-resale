@@ -1,28 +1,17 @@
 """
-Trustpilot Scraper — NEW BRANDS ONLY
-Thesis: Consumer Perceptions of Branded Resale Channels
+scraper_wave2.py - Trustpilot scraper, second collection wave
 
-Scraping strategy:
-  Treatment brands — ALL available reviews (no page cap)
-  Control brands   — max 100 pages (~2,000 reviews)
+Same method as scraper_wave1.py (see that file for the step-by-step), for the
+brands in brands_config_new.py. Treatment brands: all reviews. Control
+brands: at most 100 pages (about 2,000 reviews), enough for a stable baseline.
 
-Output format matches data_thesis.xlsx:
-  date · rating · title · text · consumer_country · brand · segment ·
-  group · resale_program · integration_level · messaging_intensity ·
-  discount_depth · service_offerings · period
-
-Install:
-    pip install undetected-chromedriver selenium
-
-Usage:
-    python trustpilot_selenium_scraper.py --all
-    python trustpilot_selenium_scraper.py --treatment
-    python trustpilot_selenium_scraper.py --control
-    python trustpilot_selenium_scraper.py --brand carhartt
-
-Output:
-    data/selenium/<brand>_trustpilot.csv
-    data/selenium/all_trustpilot_master.csv
+Install:   pip install undetected-chromedriver selenium pandas
+Usage (from this folder):
+    python scraper_wave2.py --all
+    python scraper_wave2.py --treatment
+    python scraper_wave2.py --control
+    python scraper_wave2.py --brand carhartt
+Output:    data/selenium/<brand>_trustpilot.csv and all_trustpilot_master.csv
 """
 
 import undetected_chromedriver as uc

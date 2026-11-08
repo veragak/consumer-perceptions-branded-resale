@@ -1,16 +1,15 @@
 """
-brands_config.py — Single source of truth for all brand data
-Imported by trustpilot_scraper.py, reddit_scraper.py, brand_website_scraper.py
+brands_config.py - brand list for the FIRST scraping wave (used by scraper_wave1.py)
 
-FINAL BRAND DESIGN (10 treatment + 6 control = 16 brands total)
+One entry per brand: display name, Trustpilot address ("trustpilot_slug"),
+segment, treatment/control group, resale launch date and programme name.
+The scraper uses the launch date to label every review "pre" or "post".
 
-Treatment brands are split into 3 market segments so you can add
-"segment" as a control variable in your regressions (Study 1 & 2).
-
-DiD feasibility notes:
-  ✅ = confirmed launch date + expected sufficient review volume
-  ⚠️ = launch date confirmed but review volume may be low — check first
-  📊 = Study 2 only (launch too old or too recent for DiD window)
+This was the first study design (24 brands); the final sample has 48 brands,
+the rest were added in wave 2 (brands_config_new.py). The design variables
+in this file (integration_level, messaging_intensity, discount_depth,
+service_offerings) are early estimates. The values used in the analysis are
+in data/treatment_brands_moderators.csv.
 """
 
 from datetime import date

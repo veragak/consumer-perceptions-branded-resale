@@ -1,18 +1,12 @@
 """
-brands_config.py — NEW BRANDS TO SCRAPE ONLY
-These are the brands not yet collected. Already-scraped brands are excluded.
+brands_config_new.py - brand list for the SECOND scraping wave (used by scraper_wave2.py)
 
-Treatment brands organised by resale platform.
-Control brands organised by segment.
+Brands not collected in wave 1, mostly control brands plus treatment brands
+found on the Trove and Faume partner lists. Same fields as brands_config.py.
 
-Scraping strategy:
-  Treatment — ALL available reviews
-  Control   — max 100 pages (~2,000 reviews)
-
-DiD feasibility:
-  ✅ = feasible  |  📊 = Study 2 only
-
-# VERIFY SLUG — confirm at trustpilot.com/review/<slug> before running
+Before scraping, check each "trustpilot_slug" by opening
+trustpilot.com/review/<slug>. The design variables here are early estimates;
+the analysis uses data/treatment_brands_moderators.csv.
 """
 
 from datetime import date

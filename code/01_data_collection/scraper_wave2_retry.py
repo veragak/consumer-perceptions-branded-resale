@@ -1,28 +1,17 @@
 """
-Trustpilot Retry Scraper — Targeted brands only
-Thesis: Consumer Perceptions of Branded Resale Channels
+scraper_wave2_retry.py - re-run for brands whose first scrape stopped early
 
-Fixes vs previous run:
-  - ONE login at the start, session reused across all brands
-  - Empty pages trigger retries (15s / 30s / 45s) instead of early stop
-  - All reviews collected, no page cap for treatment brands
-  - Control brands capped at 100 pages (~2,000 reviews)
+Some wave-2 runs ended early because Trustpilot returned empty pages. This
+version logs in once, retries empty pages (after 15, 30 and 45 seconds)
+instead of stopping, and contains its own brand list (no config file).
 
-Brands in this file:
-  TREATMENT: Aigle, Soeur, Balzac Paris, Steve Madden, Armedangels,
-             The North Face, Studio Anneloes
-  CONTROL:   Organic Basics, Rouje, Sessùn
+Brands: treatment - Aigle, Soeur, Balzac Paris, Steve Madden, Armedangels,
+The North Face, Studio Anneloes; control - Organic Basics, Rouje, and Sessun
+(Sessun was later dropped from the sample).
 
-Output format matches data_thesis.xlsx exactly:
-  date · rating · title · text · consumer_country · brand · segment ·
-  group · resale_program · integration_level · messaging_intensity ·
-  discount_depth · service_offerings · period
-
-Usage:
-    python scraper_retry.py --all
-    python scraper_retry.py --treatment
-    python scraper_retry.py --control
-    python scraper_retry.py --brand aigle
+Usage (from this folder):
+    python scraper_wave2_retry.py --all
+    python scraper_wave2_retry.py --brand aigle
 """
 
 import undetected_chromedriver as uc

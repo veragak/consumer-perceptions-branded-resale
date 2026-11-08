@@ -1,21 +1,24 @@
 """
-Trustpilot Full Scraper — Undetected ChromeDriver + Login
-Thesis: Consumer Perceptions of Branded Resale Channels
+scraper_wave1.py - Trustpilot scraper, first collection wave
 
-Requires ONE manual Google login at the start, then runs fully automatically.
+What it does
+  1. Opens Chrome (undetected-chromedriver, so Trustpilot does not block it).
+  2. Asks you to log in to Trustpilot once by hand; Trustpilot redirects to a
+     login page after a number of review pages otherwise.
+  3. For each brand in brands_config.py, opens its Trustpilot page and reads
+     every review page by page: date, star rating, title, text, country.
+  4. Adds the brand's study information and labels each review "pre" or
+     "post" relative to the resale launch (controls get "control").
+  5. Saves one CSV per brand plus a combined file.
 
-Install:
-    pip install undetected-chromedriver selenium
+Install:   pip install undetected-chromedriver selenium pandas
+Usage (from this folder):
+    python scraper_wave1.py --all            # every brand in brands_config.py
+    python scraper_wave1.py --treatment      # treatment brands only
+    python scraper_wave1.py --brand bash     # one brand (key from the config)
+Output:    data/selenium/<brand>_trustpilot.csv and all_trustpilot_master.csv
 
-Usage:
-    python trustpilot_selenium_scraper.py --all          # all 16 brands
-    python trustpilot_selenium_scraper.py --did-only     # 8 DiD brands only
-    python trustpilot_selenium_scraper.py --treatment    # treatment brands
-    python trustpilot_selenium_scraper.py --brand bash   # single brand
-
-Output:
-    data/selenium/<brand>_trustpilot.csv
-    data/selenium/all_trustpilot_master.csv
+CHROME_VERSION below must match the Chrome installed on your computer.
 """
 
 import undetected_chromedriver as uc

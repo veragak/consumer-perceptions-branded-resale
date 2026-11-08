@@ -1,5 +1,5 @@
 # =============================================================================
-# 03_export_public_data.R
+# 03_export_public_data.R  -  make the public dataset (removes the review text)
 #
 # Creates data/reviews_scored.csv, the public dataset every analysis script uses.
 #
