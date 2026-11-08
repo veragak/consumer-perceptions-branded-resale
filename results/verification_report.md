@@ -6,7 +6,7 @@ A value MATCHES when it rounds to the number printed in the thesis. "random" mar
 
 | Status | Count |
 |---|---|
-| MATCH | 517 |
+| MATCH | 523 |
 | DIFFERENT | 44 |
 | MATCH (random) | 23 |
 | MATCH (t-based p-value) | 3 |
@@ -194,6 +194,12 @@ A value MATCHES when it rounds to the number printed in the thesis. "random" mar
 | Table A.4c German-language reviews Treatment post-launch % | 7.0 | 7.0 | MATCH |  |
 | Table A.4c German-language reviews Control pre-event % | 5.1 | 5.1 | MATCH |  |
 | Table A.4c German-language reviews Control post-event % | 2.8 | 2.8 | MATCH |  |
+| Footnote 2 discount SD, lowest brand | 4.8 | 4.82 | MATCH |  |
+| Footnote 2 discount SD, highest brand | 22.8 | 22.76 | MATCH |  |
+| Footnote 2 10-vs-5 listings, most negative (pp) | -8.9 | -8.88 | MATCH |  |
+| Footnote 2 10-vs-5 listings, most positive (pp) | 3.7 | 3.7 | MATCH |  |
+| Footnote 2 10-vs-5 listings, mean absolute (pp) | 2.7 | 2.7248 | MATCH |  |
+| Section 4.2.1 VADER cutoffs 200-600: all r > 0.92 | 0.92 | 0.9398 | MATCH |  |
 | Section 5.2 pooled pre-trend interaction | -0.124 | -0.1239 | MATCH |  |
 | Table 3/A.6 TWFE Star rating beta | 0.244 | 0.2438 | MATCH |  |
 | Table 3/A.6 TWFE Star rating se | 0.233 | 0.2331 | MATCH |  |

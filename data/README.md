@@ -7,6 +7,7 @@ Everything the analysis needs is in this folder. All scripts in `code/` read fro
 | `reviews_scored.csv` | 49,736 | One row per Trustpilot review, with the three outcome scores |
 | `treatment_brands_moderators.csv` | 21 | Treatment brands: launch date, platform, and the four hand-coded design variables (thesis Appendix A.3) |
 | `control_brands.csv` | 27 | Control brands: segment, matched treatment brands, pseudo-event date (thesis Appendix A.1) |
+| `discount_depth_listings.csv` | 210 | 10 resale listings per treatment brand with the matching new retail price, in euros. Source of the discount moderator |
 
 ## `reviews_scored.csv`
 
@@ -51,6 +52,8 @@ The author coded these variables from each brand's resale website, press release
 | `discount` | Mean percentage discount of 10 resale listings against the matching new retail price |
 | `discount_sd` | Standard deviation of that discount across the 10 listings |
 | `services` | 1 = basic resale only. 2 = one extra service. 3 = two or more of repair, warranty and trade-in |
+
+`discount` and `discount_sd` are computed from `discount_depth_listings.csv` by `code/07_discount_depth.py`. For each of the 10 listings, discount = (retail − resale) / retail × 100. The listings were collected by hand in May 2026, matching each resale item to the same item at current retail price.
 
 Michael Kors and Steve Madden run peer-to-peer resale, where sellers set the prices. Their discount reflects market prices, not a brand decision. `code/31_study2_raw_change.R` checks the results without them.
 

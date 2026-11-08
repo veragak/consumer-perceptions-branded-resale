@@ -85,6 +85,19 @@ if (TABLES / 'tableA4c_lda_topic_shares.csv').exists():
         for col, v in zip(lda.columns[1:], vals):
             check(f'Table A.4c {label} {col} %', v, lda.loc[label, col], tol=0.05)
 
+# -- Measurement checks quoted in Section 4.2 -------------------------------------
+dd = t('discount_depth_by_brand.csv')
+check('Footnote 2 discount SD, lowest brand', 4.8, dd['discount_sd_10'].min(), tol=0.05)
+check('Footnote 2 discount SD, highest brand', 22.8, dd['discount_sd_10'].max(), tol=0.05)
+check('Footnote 2 10-vs-5 listings, most negative (pp)', -8.9, dd['diff_10_minus_5_pp'].min(), tol=0.05)
+check('Footnote 2 10-vs-5 listings, most positive (pp)', 3.7, dd['diff_10_minus_5_pp'].max(), tol=0.05)
+check('Footnote 2 10-vs-5 listings, mean absolute (pp)', 2.7, dd['diff_10_minus_5_pp'].abs().mean(), tol=0.05)
+if (TABLES / 'vader_cutoff_check.csv').exists():
+    vc = t('vader_cutoff_check.csv')
+    ok = vc['corr_with_400'].min() > 0.92
+    rows.append({'item': 'Section 4.2.1 VADER cutoffs 200-600: all r > 0.92', 'thesis': 0.92,
+                 'reproduced': vc['corr_with_400'].min(), 'status': 'MATCH' if ok else 'DIFFERENT'})
+
 # -- Study 1 -------------------------------------------------------------------------
 pt = t('pretrend_pooled_test.csv')
 check('Section 5.2 pooled pre-trend interaction', -0.124, pt['beta'][0])

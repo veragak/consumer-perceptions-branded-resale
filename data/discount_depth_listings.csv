@@ -1,0 +1,211 @@
+brand,segment,platform,item,retail_eur,resale_eur
+Ba&sh,CF,Faume,1,175,53
+Ba&sh,CF,Faume,2,295,148
+Ba&sh,CF,Faume,3,75,32
+Ba&sh,CF,Faume,4,240,101
+Ba&sh,CF,Faume,5,75,38
+Ba&sh,CF,Faume,6,125,63
+Ba&sh,CF,Faume,7,190,70
+Ba&sh,CF,Faume,8,165,78
+Ba&sh,CF,Faume,9,175,88
+Ba&sh,CF,Faume,10,225,146
+Sandro,CF,Faume,1,445,160
+Sandro,CF,Faume,2,325,95
+Sandro,CF,Faume,3,565,140
+Sandro,CF,Faume,4,295,150
+Sandro,CF,Faume,5,295,95
+Sandro,CF,Faume,6,220,85
+Sandro,CF,Faume,7,215,80
+Sandro,CF,Faume,8,360,130
+Sandro,CF,Faume,9,430,185
+Sandro,CF,Faume,10,430,155
+Maje,CF,Faume,1,335,101
+Maje,CF,Faume,2,195,68
+Maje,CF,Faume,3,275,83
+Maje,CF,Faume,4,195,59
+Maje,CF,Faume,5,175,70
+Maje,CF,Faume,6,155,54
+Maje,CF,Faume,7,255,115
+Maje,CF,Faume,8,375,188
+Maje,CF,Faume,9,355,99
+Maje,CF,Faume,10,195,78
+Claudie Pierlot,CF,Faume,1,265,93
+Claudie Pierlot,CF,Faume,2,225,95
+Claudie Pierlot,CF,Faume,3,245,103
+Claudie Pierlot,CF,Faume,4,85,35
+Claudie Pierlot,CF,Faume,5,325,114
+Claudie Pierlot,CF,Faume,6,165,64
+Claudie Pierlot,CF,Faume,7,85,36
+Claudie Pierlot,CF,Faume,8,195,96
+Claudie Pierlot,CF,Faume,9,145,65
+Claudie Pierlot,CF,Faume,10,165,56
+Balzac Paris,CF,Faume,1,130,59
+Balzac Paris,CF,Faume,2,120,90
+Balzac Paris,CF,Faume,3,160,72
+Balzac Paris,CF,Faume,4,110,33
+Balzac Paris,CF,Faume,5,55,25
+Balzac Paris,CF,Faume,6,120,84
+Balzac Paris,CF,Faume,7,160,104
+Balzac Paris,CF,Faume,8,145,109
+Balzac Paris,CF,Faume,9,1000,55
+Balzac Paris,CF,Faume,10,210,147
+Soeur,CF,Faume,1,295,148
+Soeur,CF,Faume,2,185,93
+Soeur,CF,Faume,3,195,78
+Soeur,CF,Faume,4,165,58
+Soeur,CF,Faume,5,145,73
+Soeur,CF,Faume,6,145,65
+Soeur,CF,Faume,7,295,177
+Soeur,CF,Faume,8,165,99
+Soeur,CF,Faume,9,275,165
+Soeur,CF,Faume,10,225,56
+Steve Madden,CF,Trove,1,102,38
+Steve Madden,CF,Trove,2,127,41
+Steve Madden,CF,Trove,3,102,33
+Steve Madden,CF,Trove,4,89,67
+Steve Madden,CF,Trove,5,127,41
+Steve Madden,CF,Trove,6,102,33
+Steve Madden,CF,Trove,7,102,78
+Steve Madden,CF,Trove,8,69,35
+Steve Madden,CF,Trove,9,89,51
+Steve Madden,CF,Trove,10,127,70
+Armedangels,CF,Trove,1,40,7
+Armedangels,CF,Trove,2,130,22
+Armedangels,CF,Trove,3,80,11
+Armedangels,CF,Trove,4,50,29
+Armedangels,CF,Trove,5,120,18
+Armedangels,CF,Trove,6,80,43
+Armedangels,CF,Trove,7,130,17
+Armedangels,CF,Trove,8,130,50
+Armedangels,CF,Trove,9,50,29
+Armedangels,CF,Trove,10,60,28
+Studio Anneloes,CF,Archive,1,90,49
+Studio Anneloes,CF,Archive,2,139,84
+Studio Anneloes,CF,Archive,3,140,76
+Studio Anneloes,CF,Archive,4,150,81
+Studio Anneloes,CF,Archive,5,160,82
+Studio Anneloes,CF,Archive,6,130,70
+Studio Anneloes,CF,Archive,7,99,38
+Studio Anneloes,CF,Archive,8,110,59
+Studio Anneloes,CF,Archive,9,50,27
+Studio Anneloes,CF,Archive,10,80,30
+Levi's,CF,Trove,1,120,52
+Levi's,CF,Trove,2,140,52
+Levi's,CF,Trove,3,65,42
+Levi's,CF,Trove,4,110,52
+Levi's,CF,Trove,5,120,39
+Levi's,CF,Trove,6,319,78
+Levi's,CF,Trove,7,120,40
+Levi's,CF,Trove,8,37,20
+Levi's,CF,Trove,9,52,26
+Levi's,CF,Trove,10,87,37
+Hugo Boss,PF,Faume,1,179,90
+Hugo Boss,PF,Faume,2,139,54
+Hugo Boss,PF,Faume,3,99,60
+Hugo Boss,PF,Faume,4,375,200
+Hugo Boss,PF,Faume,5,160,100
+Hugo Boss,PF,Faume,6,180,98
+Hugo Boss,PF,Faume,7,199,120
+Hugo Boss,PF,Faume,8,70,40
+Hugo Boss,PF,Faume,9,375,240
+Hugo Boss,PF,Faume,10,130,70
+Lacoste,PF,Faume,1,140,72
+Lacoste,PF,Faume,2,160,64
+Lacoste,PF,Faume,3,130,59
+Lacoste,PF,Faume,4,150,83
+Lacoste,PF,Faume,5,190,105
+Lacoste,PF,Faume,6,140,84
+Lacoste,PF,Faume,7,150,75
+Lacoste,PF,Faume,8,125,63
+Lacoste,PF,Faume,9,130,72
+Lacoste,PF,Faume,10,155,78
+Canada Goose,PF,Trove,1,950,665
+Canada Goose,PF,Trove,2,575,443
+Canada Goose,PF,Trove,3,669,399
+Canada Goose,PF,Trove,4,700,490
+Canada Goose,PF,Trove,5,795,557
+Canada Goose,PF,Trove,6,575,322
+Canada Goose,PF,Trove,7,1525,992
+Canada Goose,PF,Trove,8,650,455
+Canada Goose,PF,Trove,9,695,487
+Canada Goose,PF,Trove,10,750,420
+Michael Kors,PF,Trove,1,111,55
+Michael Kors,PF,Trove,2,128,64
+Michael Kors,PF,Trove,3,106,53
+Michael Kors,PF,Trove,4,130,70
+Michael Kors,PF,Trove,5,46,34
+Michael Kors,PF,Trove,6,109,60
+Michael Kors,PF,Trove,7,150,80
+Michael Kors,PF,Trove,8,78,40
+Michael Kors,PF,Trove,9,130,65
+Michael Kors,PF,Trove,10,58,25
+Lululemon,OA,Trove,1,78,55
+Lululemon,OA,Trove,2,68,31
+Lululemon,OA,Trove,3,58,29
+Lululemon,OA,Trove,4,98,51
+Lululemon,OA,Trove,5,98,41
+Lululemon,OA,Trove,6,78,55
+Lululemon,OA,Trove,7,68,45
+Lululemon,OA,Trove,8,138,70
+Lululemon,OA,Trove,9,68,45
+Lululemon,OA,Trove,10,148,47
+Allbirds,OA,Trove,1,102,60
+Allbirds,OA,Trove,2,150,78
+Allbirds,OA,Trove,3,80,50
+Allbirds,OA,Trove,4,110,65
+Allbirds,OA,Trove,5,170,105
+Allbirds,OA,Trove,6,60,39
+Allbirds,OA,Trove,7,162,99
+Allbirds,OA,Trove,8,78,46
+Allbirds,OA,Trove,9,88,52
+Allbirds,OA,Trove,10,150,65
+Aigle,OA,Faume,1,210,128
+Aigle,OA,Faume,2,90,40
+Aigle,OA,Faume,3,125,65
+Aigle,OA,Faume,4,90,55
+Aigle,OA,Faume,5,350,214
+Aigle,OA,Faume,6,90,53
+Aigle,OA,Faume,7,180,126
+Aigle,OA,Faume,8,210,126
+Aigle,OA,Faume,9,90,32
+Aigle,OA,Faume,10,350,140
+Carhartt,OA,Trove,1,69,52
+Carhartt,OA,Trove,2,60,33
+Carhartt,OA,Trove,3,99,55
+Carhartt,OA,Trove,4,78,36
+Carhartt,OA,Trove,5,60,45
+Carhartt,OA,Trove,6,130,84
+Carhartt,OA,Trove,7,66,39
+Carhartt,OA,Trove,8,50,37
+Carhartt,OA,Trove,9,60,45
+Carhartt,OA,Trove,10,70,50
+The North Face,OA,Archive,1,150,90
+The North Face,OA,Archive,2,90,54
+The North Face,OA,Archive,3,260,78
+The North Face,OA,Archive,4,240,120
+The North Face,OA,Archive,5,179,90
+The North Face,OA,Archive,6,60,35
+The North Face,OA,Archive,7,85,34
+The North Face,OA,Archive,8,300,170
+The North Face,OA,Archive,9,160,64
+The North Face,OA,Archive,10,280,150
+Arc'teryx,OA,Trove,1,180,128
+Arc'teryx,OA,Trove,2,120,84
+Arc'teryx,OA,Trove,3,100,75
+Arc'teryx,OA,Trove,4,170,111
+Arc'teryx,OA,Trove,5,200,124
+Arc'teryx,OA,Trove,6,399,251
+Arc'teryx,OA,Trove,7,110,83
+Arc'teryx,OA,Trove,8,60,45
+Arc'teryx,OA,Trove,9,200,130
+Arc'teryx,OA,Trove,10,180,117
+Patagonia,OA,Trove,1,100,60
+Patagonia,OA,Trove,2,120,50
+Patagonia,OA,Trove,3,170,102
+Patagonia,OA,Trove,4,200,120
+Patagonia,OA,Trove,5,78,45
+Patagonia,OA,Trove,6,180,89
+Patagonia,OA,Trove,7,220,140
+Patagonia,OA,Trove,8,250,145
+Patagonia,OA,Trove,9,90,50
+Patagonia,OA,Trove,10,90,60

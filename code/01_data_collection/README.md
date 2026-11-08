@@ -2,6 +2,27 @@
 
 These scripts collected the 49,736 Trustpilot reviews used in the thesis (Section 4.1). They are included for transparency. They are not needed to reproduce the results, because the scored data is already in `data/`.
 
+## Why Trustpilot
+
+Brand sales data is confidential, so the thesis measures perception through reviews. Customers write them unprompted, they carry a timestamp, and they are public. Other sources were considered and dropped (thesis Section 4.1, footnote 1):
+
+| Source | Why it was not used |
+|---|---|
+| Avis Vérifiés | Restricts programmatic access |
+| Bazaarvoice | Data is not organised in a way that allows tracking brands over time |
+| Wayback Machine | Trustpilot pages are not archived in a usable form |
+| Reddit | The application for API access was denied |
+
+## How the brands were chosen
+
+**Treatment brands, 21 in total, run their own resale programme.** They were identified from the public partner lists of the two largest resale infrastructure providers: Trove, mostly North American brands, and Faume, mostly European brands. Two brands run on Archive. Using published partner lists makes the selection transparent and repeatable. Each brand's launch month comes from press releases and the brand's own site; see `data/treatment_brands_moderators.csv`.
+
+**Control brands, 27 in total, have no confirmed own resale programme.** They were picked in the same market segment and product category as specific treatment brands. For example, Moncler and Moose Knuckles were picked for Canada Goose, and Hoka for Allbirds. Where Trustpilot had enough candidates, one treatment brand got several controls. This is why there are more controls than treatment brands: a bigger donor pool gives synthetic DiD more room to match each treatment brand. The matching is listed in `data/control_brands.csv`.
+
+**Three segments:** contemporary fashion, premium fashion, and outdoor and athletic.
+
+**Exclusions:** Arc'teryx (0 reviews before launch) and Patagonia (2) are collected but not used in the before/after analysis. Their resale programmes are older than their Trustpilot history.
+
 ## How the data was collected
 
 Reviews were scraped from each brand's public Trustpilot page with Selenium and `undetected-chromedriver`. The scraper opens a Chrome window and asks you to log in to Trustpilot by hand, because Trustpilot redirects to a login page after a number of review pages. It then pages through the brand's reviews. In the second wave, treatment brands were collected without a page limit, and control brands were capped at 100 pages, about 2,000 reviews. For each review it stores the date, star rating, title, text and reviewer country, together with the brand's study variables from the config file.

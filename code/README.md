@@ -17,7 +17,7 @@ Trustpilot ──► 01_data_collection/ ──► private/raw/*.csv           (
                                             │
                                    private/df_enriched.csv          (not published: has review text)
                                    │                    │
-                    03_export_public_data.R      04_lda_topics.py ──► Figure 2, A.4
+                    03_export_public_data.R      04-06: topic model, VADER check
                                    │
                          data/reviews_scored.csv     (public, no text)
                                    │
@@ -34,6 +34,9 @@ Trustpilot ──► 01_data_collection/ ──► private/raw/*.csv           (
 | `02_score_reviews.py` | 4.2.1, A.2 | Sustainability and value-sentiment scores. Needs raw text |
 | `03_export_public_data.R` | n/a | `data/reviews_scored.csv`, by dropping the text columns |
 | `04_lda_topics.py` | 4.3.1, 5.1, A.4 | Figure 2, Tables A.4b and A.4c. Needs raw text |
+| `05_lda_model_selection.py` | A.4 | Table A.4a, recomputed: held-out perplexity for 5 to 10 topics. Needs raw text |
+| `06_vader_cutoff_check.py` | 4.2.1 | Robustness of value VADER to the 200-600 character fallback. Needs raw text |
+| `07_discount_depth.py` | 4.2.2, A.3 | Discount-depth moderator from 210 hand-collected price pairs, plus the 5-vs-10 listing check |
 | `10_descriptives.R` | 4.1, 5.1, A.1 | Tables 1, 2 and A.1 |
 | `11_figures_descriptive.py` | 5.1, A.5 | Figures 1 and A.5 |
 | `20_twfe_did.R` | 5.2, A.6 | Table 3 TWFE column, Table A.6, pooled pre-trend test |
