@@ -111,20 +111,15 @@ Tested with R 4.5.1 (synthdid 0.0.9, did 2.3.1, lfe 3.1.1) and Python 3.11 (pand
 ```bash
 Rscript install_packages.R
 pip install -r requirements.txt
-bash run_all.sh     # about 2 hours, mostly the synthetic DiD; ends with the check against the thesis
+bash run_all.sh     # about 2 hours, mostly the synthetic DiD
 ```
 
 `run_all.sh` runs the scripts in order. [`code/README.md`](code/README.md) explains each step and the three estimators.
-
-## Verification
-
-Every number printed in the thesis tables was checked against the output of this code: 594 numbers in total. All of them reproduce, or differ for a documented reason, such as random resampling in the standard errors or a copy error in the PDF. None is unexplained. The details are in [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) and [`results/verification_report.md`](results/verification_report.md).
 
 ## Repository layout
 
 ```
 ├── README.md                  this page
-├── REPRODUCIBILITY.md         how the results were checked, and notes on the PDF
 ├── thesis/                    the thesis PDF
 ├── data/                      public data + codebook
 ├── code/                      numbered scripts, run in order (see code/README.md)

@@ -268,7 +268,7 @@ def md_table(d):
 
 rep = pd.DataFrame(rows)
 
-# Known, explained differences (see README "Notes and corrections")
+# Known, explained differences
 REASONS = [
     ('Table 5 Ba&sh delta', 'PDF swaps the Delta values of Ba&sh and Balzac Paris; thesis text agrees with the data'),
     ('Table 5 Balzac Paris delta', 'PDF swaps the Delta values of Ba&sh and Balzac Paris; thesis text agrees with the data'),

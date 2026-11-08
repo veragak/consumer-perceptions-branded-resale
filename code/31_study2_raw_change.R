@@ -18,7 +18,7 @@
 # instead of the ATT. Brands need >= 30 pre-launch and >= 50 post-launch reviews,
 # which drops Claudie Pierlot (40 post-launch reviews): N = 18.
 #
-# Differences from the thesis PDF (see README, "Notes and corrections"):
+# Differences from the thesis PDF:
 #  * Table 5 in the PDF swaps the three Delta values of Ba&sh and Balzac Paris.
 #    The data give Balzac Paris +1.912 stars and Ba&sh +1.812, as the thesis
 #    text itself says ("Balzac Paris ... its 1.9-star raw improvement").
