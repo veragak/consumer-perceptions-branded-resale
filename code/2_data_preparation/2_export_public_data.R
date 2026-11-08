@@ -1,17 +1,17 @@
 # =============================================================================
-# 03_export_public_data.R  -  make the public dataset (removes the review text)
+# 2_data_preparation/2_export_public_data.R  -  make the public dataset (removes the review text)
 #
 # Creates data/reviews_scored.csv, the public dataset every analysis script uses.
 #
 # Input (private, not in this repository): the scored review file produced by
-#   02_score_reviews.py, which still contains the review title and text.
+#   2_data_preparation/1_score_reviews.py, which still contains the review title and text.
 # Output: the same 49,736 reviews WITHOUT title, text or reviewer country.
 #   Only the date, brand, group labels, star rating and the two text-derived
 #   scores are kept. This is enough to reproduce every table in the thesis
 #   except the LDA topic model (Figure 2, Appendix A.4), which needs the text.
 #
 # Usage (author only):
-#   Rscript code/03_export_public_data.R path/to/df_enriched.csv
+#   Rscript code/2_data_preparation/2_export_public_data.R path/to/df_enriched.csv
 # =============================================================================
 suppressPackageStartupMessages({ library(readr); library(dplyr); library(stringr) })
 

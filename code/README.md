@@ -1,67 +1,94 @@
 # Code
 
-Scripts are numbered in the order they run. Run them all from the repository root:
+The code is organised in one folder per stage of the thesis, in the order the work was done. Inside each folder, files are numbered in the order they run.
+
+```
+code/
+├── 1_data_collection/     scrape Trustpilot reviews
+├── 2_data_preparation/    turn review text into scores; build the public dataset
+├── 3_text_analysis/       what do reviews talk about? (LDA) + robustness of the VADER score
+├── 4_descriptives/        describe the sample (Tables 1, 2, Figures 1, A.5)
+├── 5_study1_did/          Study 1: did resale launches change perceptions?
+├── 6_study2_moderation/   Study 2: do resale design choices explain the differences?
+├── 7_verification/        compare every reproduced number with the thesis PDF
+└── shared/                settings and helper functions used by all scripts
+```
+
+To run everything, from the repository root:
 
 ```bash
 bash run_all.sh
 ```
 
-Every script starts with a header that names the thesis section, the tables and figures it produces, and what the method does. R scripts share `_common.R` and Python scripts share `_common.py`. Both hold the data paths, the sample rules, such as excluded brands, and the helper functions. This way every script uses the same sample.
+Every script starts with a short header that names the thesis section, lists what it produces, and explains the method step by step.
 
-## Pipeline
+## What each script does
 
-```
-Trustpilot ──► 01_data_collection/ ──► private/raw/*.csv           (not published)
-                                            │
-                              02_score_reviews.py: sustainability score + value VADER
-                                            │
-                                   private/df_enriched.csv          (not published: has review text)
-                                   │                    │
-                    03_export_public_data.R      04-06: topic model, VADER check
-                                   │
-                         data/reviews_scored.csv     (public, no text)
-                                   │
-       ┌──────────────┬────────────┼──────────────────┬─────────────────┐
-  10, 11            20, 21, 22     23 synthetic DiD    24 robustness     30, 31
-  descriptives      TWFE, C&S      ──► by-brand ATTs ──► 25 figures ──► Study 2
-```
+### 1_data_collection
+The Trustpilot scrapers and brand lists. See [`1_data_collection/README.md`](1_data_collection/README.md) for how the data and the brands were chosen.
 
-## Scripts
-
-| Script | Thesis section | Produces |
+### 2_data_preparation
+| Script | What it does | Thesis |
 |---|---|---|
-| `01_data_collection/` | 4.1 | Raw reviews. See the README in that folder |
-| `02_score_reviews.py` | 4.2.1, A.2 | Sustainability and value-sentiment scores. Needs raw text |
-| `03_export_public_data.R` | n/a | `data/reviews_scored.csv`, by dropping the text columns |
-| `04_lda_topics.py` | 4.3.1, 5.1, A.4 | Figure 2, Tables A.4b and A.4c. Needs raw text |
-| `05_lda_model_selection.py` | A.4 | Table A.4a, recomputed: held-out perplexity for 5 to 10 topics. Needs raw text |
-| `06_vader_cutoff_check.py` | 4.2.1 | Robustness of value VADER to the 200-600 character fallback. Needs raw text |
-| `07_discount_depth.py` | 4.2.2, A.3 | Discount-depth moderator from 210 hand-collected price pairs, plus the 5-vs-10 listing check |
-| `10_descriptives.R` | 4.1, 5.1, A.1 | Tables 1, 2 and A.1 |
-| `11_figures_descriptive.py` | 5.1, A.5 | Figures 1 and A.5 |
-| `20_twfe_did.R` | 5.2, A.6 | Table 3 TWFE column, Table A.6, pooled pre-trend test |
-| `21_callaway_santanna.R` | 5.2 | Table 3 C&S column |
-| `22_cs_event_study.R` | 5.2 | Figure 5 |
-| `23_synthdid.R` | 4.3.2, 5.2 | Table 3 SDID column, Table 4, Table 5 ATT columns, pre-launch fit |
-| `24_synthdid_lowvol.R` | A.7 | Table A.7 |
-| `25_figures_synthdid.py` | 5.2 | Figures 3, 4 and 6 |
-| `26_synthdid_pool_thesis_se.R` | 5.2 | Tables 3 and 4 exactly as printed, using the thesis run's placebo SEs |
-| `30_study2_moderation.R` | 4.3.3, 5.3 | Tables 6 and 7 |
-| `31_study2_raw_change.R` | 5.2, A.8 | Table 5, Tables A.8a and A.8b, peer-to-peer sensitivity check |
-| `99_check_against_thesis.py` | all | `results/verification_report.md`, every reproduced number compared with the PDF |
+| `1_score_reviews.py` | Computes the sustainability score (dictionary) and value VADER score for each review. Needs the raw text | 4.2.1, A.2 |
+| `2_export_public_data.R` | Removes title and text to create the public `data/reviews_scored.csv` | n/a |
+| `3_discount_depth.py` | Computes each brand's resale discount from 10 hand-collected price pairs | 4.2.2, A.3 |
 
-Scripts 24, 25, 26, 30 and 31 read `results/tables/synthdid_by_brand.csv`, so run `23_synthdid.R` first.
+### 3_text_analysis
+These scripts need the review text, which is not published. Their outputs are included in `results/`.
+
+| Script | What it does | Thesis |
+|---|---|---|
+| `1_lda_topics.py` | Seven-topic LDA model: what reviewers write about, before and after launch | Figure 2, A.4b, A.4c |
+| `2_lda_model_selection.py` | Compares 5 to 10 topics to justify choosing seven | A.4a |
+| `3_vader_cutoff_check.py` | Checks that the 400-character VADER fallback does not drive the results | 4.2.1 |
+
+### 4_descriptives
+| Script | What it does | Thesis |
+|---|---|---|
+| `1_descriptives.R` | Sample counts per brand and outcome means by group and period | Tables 1, 2, A.1 |
+| `2_figures_descriptive.py` | Before/after bar chart, and sustainability mentions by brand | Figures 1, A.5 |
+
+### 5_study1_did
+| Script | What it does | Thesis |
+|---|---|---|
+| `1_twfe_did.R` | Standard difference-in-differences with brand and quarter fixed effects | Table 3, A.6 |
+| `2_callaway_santanna.R` | DiD for staggered launch dates (Callaway & Sant'Anna) | Table 3 |
+| `3_cs_event_study.R` | Effect by quarter before and after launch, to check parallel trends | Figure 5 |
+| `4_synthdid.R` | **Main method.** Synthetic DiD per brand, pooled overall and by segment | Tables 3, 4, 5 |
+| `5_synthdid_lowvol.R` | Robustness: synthetic DiD without the four smallest control brands | A.7 |
+| `6_synthdid_pool_thesis_se.R` | Rebuilds Tables 3 and 4 exactly, using the thesis run's standard errors | Tables 3, 4 |
+| `7_figures_synthdid.py` | Event-time chart, per-brand effects, pre-launch fit | Figures 3, 4, 6 |
+
+Scripts 5 to 7 and Study 2 use the per-brand results of `4_synthdid.R`, so it runs first.
+
+### 6_study2_moderation
+| Script | What it does | Thesis |
+|---|---|---|
+| `1_moderation.R` | Regresses each brand's effect on the four design choices, plus the integration × messaging model | Tables 6, 7 |
+| `2_raw_change.R` | Raw before/after changes per brand, and the same regressions on them | Table 5, A.8 |
+
+### 7_verification
+| Script | What it does |
+|---|---|
+| `check_against_thesis.py` | Compares every number printed in the thesis tables with the code's output and writes `results/verification_report.md` |
+
+### shared
+| File | What it does |
+|---|---|
+| `common.R` | Loaded by every R script: data loading, sample rules (excluded brands), the synthetic DiD loop, regression table helpers |
+| `common.py` | Loaded by every Python script: folder locations and chart colours |
 
 ## The three estimators in Study 1
 
 The question is whether a brand's reviews change after it launches resale, compared with what would have happened otherwise. "Otherwise" is estimated from control brands, in three ways:
 
-1. **Two-way fixed effects (`20`)**: one regression on all reviews, with a dummy for "treatment brand after launch" plus brand and quarter fixed effects. It is simple, but it assumes the 27 control brands are a fair comparison as they are, and that every brand's effect looks the same no matter when it launched.
-2. **Callaway & Sant'Anna (`21`, `22`)**: groups brands by launch quarter and compares each group only with never-treated brands. This fixes the problem of staggered timing, but not the problem that control brands differ from treatment brands.
-3. **Synthetic DiD (`23`)**: for each treatment brand separately, it weights the control brands, and the pre-launch quarters, so the weighted controls follow that brand's pre-launch path as closely as possible. Then it takes a DiD. The 19 brand effects are averaged with inverse-variance weights. This is the thesis's main estimator, because the raw control group starts from a different baseline (Section 5.1).
+1. **Two-way fixed effects** (`1_twfe_did.R`): one regression on all reviews, with a dummy for "treatment brand after launch" plus brand and quarter fixed effects. It is simple, but it assumes the 27 control brands are a fair comparison as they are, and that every brand's effect looks the same no matter when it launched.
+2. **Callaway & Sant'Anna** (`2_callaway_santanna.R`, `3_cs_event_study.R`): groups brands by launch quarter and compares each group only with never-treated brands. This fixes the problem of staggered timing, but not the problem that control brands differ from treatment brands.
+3. **Synthetic DiD** (`4_synthdid.R`): for each treatment brand separately, it weights the control brands, and the pre-launch quarters, so the weighted controls follow that brand's pre-launch path as closely as possible. Then it takes a DiD. The 19 brand effects are averaged with inverse-variance weights. This is the thesis's main estimator, because the raw control group starts from a different baseline (Section 5.1).
 
-Study 2 (`30`) takes each brand's synthetic DiD effect as the outcome and asks whether the resale design variables explain why it is larger for some brands than for others.
+Study 2 (`6_study2_moderation/1_moderation.R`) takes each brand's synthetic DiD effect as the outcome and asks whether the resale design variables explain why it is larger for some brands than for others.
 
 ## Randomness
 
-Two steps use random draws: the placebo standard errors in synthetic DiD and the bootstrap standard errors in Callaway & Sant'Anna. The seeds are now fixed, but the original thesis runs had no fixed seed, so their draws cannot be regenerated. Per-brand effects are unaffected. The pooled synthetic DiD numbers in Tables 3 and 4 are affected, because they weight brands by 1/SE². `26_synthdid_pool_thesis_se.R` therefore re-pools the reproduced effects with the saved thesis-run SEs, in `results/thesis_run/`, which gives the printed tables exactly. `results/thesis_run/README.md` explains this, and `results/verification_report.md` lists every comparison.
+Two steps use random draws: the placebo standard errors in synthetic DiD and the bootstrap standard errors in Callaway & Sant'Anna. The seeds are fixed, but the original thesis runs had none, so their draws cannot be regenerated. Per-brand effects are unaffected. The pooled synthetic DiD numbers in Tables 3 and 4 weight brands by 1/SE², so they move slightly with new draws. `6_synthdid_pool_thesis_se.R` re-pools the effects with the saved thesis-run standard errors and gives the printed tables exactly; see `results/thesis_run/README.md`.

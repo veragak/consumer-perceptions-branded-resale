@@ -1,5 +1,5 @@
 # =============================================================================
-# 31_study2_raw_change.R  -  raw before/after changes and sensitivity checks
+# 6_study2_moderation/2_raw_change.R  -  raw before/after changes and sensitivity checks
 #
 # Thesis: Table 5 (Delta columns), Appendix A.8 (Tables A.8a and A.8b),
 #         discount-depth caveat in Section 4.2.2
@@ -11,7 +11,7 @@
 #
 # Table 5 puts two numbers side by side for each treatment brand:
 #   Delta = mean after launch minus mean before launch (no control group), and
-#   the synthetic DiD ATT from 23_synthdid.R (adjusted for baseline and trend).
+#   the synthetic DiD ATT from 5_study1_did/4_synthdid.R (adjusted for baseline and trend).
 # Large gaps between the two show how much of a raw change is not due to resale.
 #
 # Appendix A.8 re-runs the Study 2 regressions with Delta as the outcome
@@ -32,7 +32,7 @@
 # sellers, not the brand, set prices, so their discount depth is not a brand
 # decision. The A.8a models are re-run without them (N = 16).
 # =============================================================================
-source("code/_common.R")
+source("code/shared/common.R")
 
 df   <- did_sample(load_reviews())
 mods <- load_moderators()

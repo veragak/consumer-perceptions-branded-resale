@@ -1,5 +1,5 @@
 # =============================================================================
-# 10_descriptives.R  -  sample description
+# 4_descriptives/1_descriptives.R  -  sample description
 #
 # Thesis: Sections 4.1 and 5.1, Appendix A.1
 # Produces:
@@ -12,7 +12,7 @@
 # of the treatment brand(s) it is matched to: its pseudo-event date
 # (data/control_brands.csv).
 # =============================================================================
-source("code/_common.R")
+source("code/shared/common.R")
 
 df   <- load_reviews()
 mods <- load_moderators()

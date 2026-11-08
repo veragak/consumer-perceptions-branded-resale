@@ -1,5 +1,5 @@
 # =============================================================================
-# 26_synthdid_pool_thesis_se.R  -  rebuild Tables 3 and 4 exactly as printed
+# 5_study1_did/6_synthdid_pool_thesis_se.R  -  rebuild Tables 3 and 4 exactly as printed
 #
 # Thesis: Table 3 (synthetic DiD column) and Table 4
 # Produces:
@@ -10,11 +10,11 @@
 # 19 brand effects, so they depend on the per-brand placebo standard errors,
 # which are random (see results/thesis_run/README.md).
 #
-# This script takes the brand effects reproduced by 23_synthdid.R, checks that
+# This script takes the brand effects reproduced by 5_study1_did/4_synthdid.R, checks that
 # they equal the ones saved in the thesis run, and pools them with the SEs from
 # that thesis run. The result matches Tables 3 and 4 of the thesis exactly.
 # =============================================================================
-source("code/_common.R")
+source("code/shared/common.R")
 
 new    <- read_csv(file.path(TABLE_DIR, "synthdid_by_brand.csv"), show_col_types = FALSE)
 thesis <- read_csv("results/thesis_run/synthdid_by_brand_thesis_run.csv", show_col_types = FALSE)

@@ -1,14 +1,14 @@
 # =============================================================================
-# _common.R  -  shared settings and helpers for every R script in code/
+# shared/common.R  -  shared settings and helpers for every R script in code/
 #
-# Every analysis script starts with  source("code/_common.R")  so that:
+# Every analysis script starts with  source("code/shared/common.R")  so that:
 #   * all scripts read the same data file with the same preparation steps,
 #   * sample definitions (excluded brands, low-volume controls) live in one place,
 #   * the synthetic DiD loop is written once and reused by the main analysis
-#     (23_synthdid.R) and the robustness check (24_synthdid_lowvol.R).
+#     (5_study1_did/4_synthdid.R) and the robustness check (5_study1_did/5_synthdid_lowvol.R).
 #
 # Run all scripts from the repository root, e.g.
-#   Rscript code/23_synthdid.R
+#   Rscript code/5_study1_did/4_synthdid.R
 # =============================================================================
 
 suppressPackageStartupMessages({
@@ -20,7 +20,7 @@ suppressPackageStartupMessages({
 
 # -- Paths ---------------------------------------------------------------------
 if (!file.exists("data/reviews_scored.csv")) {
-  stop("Run this script from the repository root, e.g.  Rscript code/23_synthdid.R")
+  stop("Run this script from the repository root, e.g.  Rscript code/5_study1_did/4_synthdid.R")
 }
 DATA_FILE  <- "data/reviews_scored.csv"
 MOD_FILE   <- "data/treatment_brands_moderators.csv"

@@ -1,10 +1,10 @@
 """
-05_lda_model_selection.py - how many topics? (recomputed Table A.4a)
+3_text_analysis/2_lda_model_selection.py - how many topics? (recomputed Table A.4a)
 
 Thesis: Appendix A.4, Table A.4a
 Produces: results/tables/tableA4a_lda_model_selection.csv
 
-Fits the same LDA as 04_lda_topics.py with 5, 6, 7, 8, 9 and 10 topics and
+Fits the same LDA as 3_text_analysis/1_lda_topics.py with 5, 6, 7, 8, 9 and 10 topics and
 compares held-out perplexity: the model is trained on 90% of the reviews and
 scored on the other 10%. Lower perplexity means the model predicts unseen
 reviews better. Perplexity usually keeps falling as topics are added, so the
@@ -30,8 +30,8 @@ from sklearn.decomposition import LatentDirichletAllocation
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
 
-sys.path.insert(0, str(Path(__file__).parent))
-from _common import PRIVATE, TABLES
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "shared"))
+from common import PRIVATE, TABLES
 
 src = PRIVATE / "df_enriched.csv"
 if not src.exists():

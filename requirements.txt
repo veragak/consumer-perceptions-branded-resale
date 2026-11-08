@@ -2,7 +2,7 @@
 pandas>=2.0   # tested with 3.0
 numpy>=1.24
 matplotlib>=3.7
-scikit-learn>=1.3       # 04_lda_topics.py
-vaderSentiment>=3.3.2   # 02_score_reviews.py
-# Data collection only (code/01_data_collection):
+scikit-learn>=1.3       # code/3_text_analysis/1_lda_topics.py
+vaderSentiment>=3.3.2   # code/2_data_preparation/1_score_reviews.py
+# Data collection only (code/1_data_collection):
 # undetected-chromedriver, selenium

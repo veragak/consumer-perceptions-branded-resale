@@ -1,5 +1,5 @@
 """
-07_discount_depth.py - where the discount-depth moderator comes from
+2_data_preparation/3_discount_depth.py - where the discount-depth moderator comes from
 
 Thesis: Section 4.2.2 (discount depth and footnote 2), Appendix A.3
 Input:  data/discount_depth_listings.csv - for each of the 21 treatment brands,
@@ -19,8 +19,8 @@ from pathlib import Path
 
 import pandas as pd
 
-sys.path.insert(0, str(Path(__file__).parent))
-from _common import DATA, TABLES
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "shared"))
+from common import DATA, TABLES
 
 d = pd.read_csv(DATA / "discount_depth_listings.csv")
 d['discount_pct'] = (d['retail_eur'] - d['resale_eur']) / d['retail_eur'] * 100

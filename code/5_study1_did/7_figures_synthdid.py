@@ -1,8 +1,8 @@
 """
-25_figures_synthdid.py - figures built from the synthetic DiD output
+5_study1_did/7_figures_synthdid.py - figures built from the synthetic DiD output
 
 Thesis: Section 5.2, Figures 3, 4 and 6
-Inputs (written by 23_synthdid.R):
+Inputs (written by 5_study1_did/4_synthdid.R):
   results/tables/synthdid_pretrend_fit.csv
   results/tables/synthdid_by_brand.csv
 Produces:
@@ -21,7 +21,7 @@ Figure 3: average star rating of the treatment brands, each aligned on its own
 Figure 4: each treatment brand's synthetic DiD effect on star rating. Error
   bars are +/- 1 standard error, as in the thesis figure (which does not state
   this; a 95% interval would be about twice as wide). Dark bars: p < 0.05. The effects
-  come from 23_synthdid.R. The SEs are the placebo SEs of the thesis run
+  come from 5_study1_did/4_synthdid.R. The SEs are the placebo SEs of the thesis run
   (results/thesis_run/), as in Tables 3 and 4, because placebo SEs are random:
   with a fresh draw one brand (Michael Kors) can cross the 5% line.
 
@@ -42,8 +42,8 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import pandas as pd
 
-sys.path.insert(0, str(Path(__file__).parent))
-from _common import TABLES, FIGURES, BLUE, ORANGE, GREEN
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "shared"))
+from common import TABLES, FIGURES, BLUE, ORANGE, GREEN
 
 fit = pd.read_csv(TABLES / "synthdid_pretrend_fit.csv")
 fit = fit[fit['outcome'] == 'rating']

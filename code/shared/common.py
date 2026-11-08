@@ -1,12 +1,12 @@
 """
-_common.py - shared paths and settings for the Python scripts in code/.
+shared/common.py - shared paths and settings for the Python scripts in code/.
 
 Run every script from the repository root, e.g.
-    python code/25_figures_synthdid.py
+    python code/5_study1_did/7_figures_synthdid.py
 """
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]   # code/shared/common.py -> repository root
 DATA = ROOT / "data"
 PRIVATE = ROOT / "private"          # not published: raw review text (see data/README.md)
 TABLES = ROOT / "results" / "tables"

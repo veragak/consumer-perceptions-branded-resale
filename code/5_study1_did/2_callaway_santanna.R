@@ -1,5 +1,5 @@
 # =============================================================================
-# 21_callaway_santanna.R  -  Study 1: staggered-adoption DiD
+# 5_study1_did/2_callaway_santanna.R  -  Study 1: staggered-adoption DiD
 #
 # Thesis: Section 4.3.2 (method), Section 5.2 and Table 3, column "C&S ATT"
 # Produces: results/tables/table3_callaway_santanna.csv
@@ -16,7 +16,7 @@
 # run had none, so SEs/p-values differ slightly from Table 3 (all remain far
 # from significance).
 # =============================================================================
-source("code/_common.R")
+source("code/shared/common.R")
 suppressPackageStartupMessages(library(did))
 
 df    <- did_sample(load_reviews())

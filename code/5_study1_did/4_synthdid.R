@@ -1,5 +1,5 @@
 # =============================================================================
-# 23_synthdid.R  -  Study 1 main estimator: synthetic difference-in-differences
+# 5_study1_did/4_synthdid.R  -  Study 1 main estimator: synthetic difference-in-differences
 #
 # Thesis: Section 4.3.2 (method), Section 5.2 (results)
 # Produces:
@@ -27,7 +27,7 @@
 # fixed here; the thesis run had no fixed seed, so SEs and p-values can differ
 # from the thesis in the third decimal. Point estimates are identical.
 # =============================================================================
-source("code/_common.R")
+source("code/shared/common.R")
 
 df    <- did_sample(load_reviews())
 panel <- brand_quarter_panel(df)

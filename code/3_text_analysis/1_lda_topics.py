@@ -1,5 +1,5 @@
 """
-04_lda_topics.py - what do reviewers write about? (LDA topic model)
+3_text_analysis/1_lda_topics.py - what do reviewers write about? (LDA topic model)
 
 Thesis: Sections 4.3.1 and 5.1 ("LDA Topic Structure"), Figure 2, Appendix A.4
 Produces:
@@ -44,8 +44,8 @@ import pandas as pd
 from sklearn.decomposition import LatentDirichletAllocation
 from sklearn.feature_extraction.text import CountVectorizer
 
-sys.path.insert(0, str(Path(__file__).parent))
-from _common import DATA, PRIVATE, TABLES, FIGURES
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "shared"))
+from common import DATA, PRIVATE, TABLES, FIGURES
 
 src = PRIVATE / "df_enriched.csv"
 if not src.exists():

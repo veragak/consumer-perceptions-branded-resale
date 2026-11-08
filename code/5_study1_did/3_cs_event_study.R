@@ -1,5 +1,5 @@
 # =============================================================================
-# 22_cs_event_study.R  -  Study 1: parallel-trends check by launch cohort
+# 5_study1_did/3_cs_event_study.R  -  Study 1: parallel-trends check by launch cohort
 #
 # Thesis: Section 5.2 "Baseline imbalance" and Figure 5
 # Produces:
@@ -7,7 +7,7 @@
 #   (plus the same plot for the two text outcomes, used as supporting material)
 #   Event-study estimates -> results/tables/figure5_cs_event_study.csv
 #
-# Why this check exists: a pooled test (20_twfe_did.R) suggests treatment and
+# Why this check exists: a pooled test (5_study1_did/1_twfe_did.R) suggests treatment and
 # control brands were already drifting apart before launch. But brands launched
 # years apart, and putting them on one calendar axis can create a fake trend
 # difference. Here every launch cohort is compared with never-treated brands on
@@ -23,9 +23,9 @@
 #
 # This is a hand-written version of the estimator, used for the event-study
 # figure. The overall C&S ATT in Table 3 comes from the `did` package
-# (21_callaway_santanna.R).
+# (5_study1_did/2_callaway_santanna.R).
 # =============================================================================
-source("code/_common.R")
+source("code/shared/common.R")
 suppressPackageStartupMessages(library(ggplot2))
 
 df <- did_sample(load_reviews())

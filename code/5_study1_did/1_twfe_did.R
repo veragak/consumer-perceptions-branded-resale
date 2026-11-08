@@ -1,5 +1,5 @@
 # =============================================================================
-# 20_twfe_did.R  -  Study 1 starting point: two-way fixed effects DiD
+# 5_study1_did/1_twfe_did.R  -  Study 1 starting point: two-way fixed effects DiD
 #
 # Thesis: Section 4.3.2 (method), Section 5.2 (results), Appendix A.6
 # Produces:
@@ -13,9 +13,9 @@
 #
 # The thesis treats this estimate as a diagnostic, not the headline result:
 # treatment and control brands start from different baselines, which the
-# synthetic DiD in 23_synthdid.R corrects for.
+# synthetic DiD in 5_study1_did/4_synthdid.R corrects for.
 # =============================================================================
-source("code/_common.R")
+source("code/shared/common.R")
 suppressPackageStartupMessages({ library(lfe); library(lmtest); library(sandwich) })
 
 df <- did_sample(load_reviews())
@@ -47,7 +47,7 @@ print(twfe, digits = 3)
 # Fits one linear calendar-time trend for pre-launch treatment reviews and one
 # for control reviews, and tests whether the slopes differ. Section 5.2 explains
 # why this pooled test is misleading with staggered launch dates; the
-# cohort-based check is in 22_cs_event_study.R (Figure 5).
+# cohort-based check is in 5_study1_did/3_cs_event_study.R (Figure 5).
 pt <- df %>% filter(period %in% c("pre", "control")) %>%
   mutate(year_n = as.numeric(format(date, "%Y")) + (as.numeric(format(date, "%m")) - 1) / 12,
          treat_pre = as.integer(period == "pre"))

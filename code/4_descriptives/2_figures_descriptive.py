@@ -1,5 +1,5 @@
 """
-11_figures_descriptive.py - model-free comparison figures
+4_descriptives/2_figures_descriptive.py - model-free comparison figures
 
 Thesis: Section 5.1 (Figure 1) and Appendix A.5 (Figure A.5)
 Produces:
@@ -26,8 +26,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-sys.path.insert(0, str(Path(__file__).parent))
-from _common import DATA, TABLES, FIGURES, BLUE, ORANGE, GREEN, RED
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "shared"))
+from common import DATA, TABLES, FIGURES, BLUE, ORANGE, GREEN, RED
 
 df = pd.read_csv(DATA / "reviews_scored.csv", parse_dates=['date'])
 pseudo = pd.read_csv(DATA / "control_brands.csv", parse_dates=['pseudo_event_date'])

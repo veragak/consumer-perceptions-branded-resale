@@ -1,10 +1,10 @@
 """
-02_score_reviews.py - turn raw Trustpilot reviews into the three outcome measures
+2_data_preparation/1_score_reviews.py - turn raw Trustpilot reviews into the three outcome measures
 
 Thesis: Section 4.2.1 (dependent variables), Appendix A.2 (dictionary)
 
 Input  (private, not published): private/raw/*_trustpilot.csv, the files written
-        by the scrapers in code/01_data_collection/. Each row is one review with
+        by the scrapers in code/1_data_collection/. Each row is one review with
         date, rating, title, text, brand, segment, group (treatment/control) and
         period (pre/post launch for treatment brands, "control" otherwise).
 Output (private): private/df_enriched.csv, the same reviews plus:
@@ -24,7 +24,7 @@ Output (private): private/df_enriched.csv, the same reviews plus:
       (compound score, -1 to 1). Reviews without such a sentence fall back to
       their first 400 characters.
 
-Next step: 03_export_public_data.R removes title/text and writes the public
+Next step: 2_data_preparation/2_export_public_data.R removes title/text and writes the public
 data/reviews_scored.csv.
 """
 import re
@@ -34,8 +34,8 @@ from pathlib import Path
 import pandas as pd
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
-sys.path.insert(0, str(Path(__file__).parent))
-from _common import PRIVATE
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "shared"))
+from common import PRIVATE
 
 SUST_POS = [
     r'sustain', r'recycl', r'circular', r'resale', r'second.hand',

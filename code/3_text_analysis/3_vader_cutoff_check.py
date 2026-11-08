@@ -1,5 +1,5 @@
 """
-06_vader_cutoff_check.py - does the 400-character fallback matter?
+3_text_analysis/3_vader_cutoff_check.py - does the 400-character fallback matter?
 
 Thesis: Section 4.2.1 ("Testing cutoffs from 200 to 600 characters produced
 near-identical results, r > 0.92")
@@ -22,8 +22,8 @@ from pathlib import Path
 import pandas as pd
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
-sys.path.insert(0, str(Path(__file__).parent))
-from _common import PRIVATE, TABLES
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "shared"))
+from common import PRIVATE, TABLES
 
 VALUE_KW = ['worth', 'value', 'price', 'expensive', 'cheap', 'overpriced',
             'quality', 'cost', 'affordable', 'bargain', 'deal', 'money',

@@ -81,28 +81,28 @@ Synthetic DiD is the main estimator because the control brands start from a diff
 
 | Thesis | Script | Output in `results/` |
 |---|---|---|
-| Table 1: treatment sample | `code/10_descriptives.R` | `tables/table1_treatment_sample.csv` |
-| Table 2: outcomes by group and period | `code/10_descriptives.R` | `tables/table2_descriptives.csv` |
-| Figure 1: pre vs post outcomes | `code/11_figures_descriptive.py` | `figures/figure1_before_after.jpg` |
-| Figure 2: LDA topics | `code/04_lda_topics.py`, needs review text | `figures/figure2_lda_topics.jpg` |
-| Figure 3: rating by event time | `code/25_figures_synthdid.py` | `figures/figure3_event_time_rating.jpg` |
-| Table 3: three estimators | `code/20`, `21`, `23`, `26` | `tables/tableA6_twfe.csv`, `table3_callaway_santanna.csv`, `table3_synthdid_pooled_thesis_se.csv` |
-| Figure 4: synthetic DiD by brand | `code/23_synthdid.R` + `25_figures_synthdid.py` | `figures/figure4_synthdid_by_brand.jpg` |
-| Figure 5: C&S event study | `code/22_cs_event_study.R` | `figures/figure5_cs_event_study_rating.jpg` |
-| Figure 6: pre-launch fit | `code/23_synthdid.R` + `25_figures_synthdid.py` | `figures/figure6_pretrend_fit.jpg` |
-| Table 4: synthetic DiD by segment | `code/23_synthdid.R` + `26` | `tables/table4_synthdid_by_segment_thesis_se.csv` |
-| Table 5: brand-level changes | `code/31_study2_raw_change.R` | `tables/table5_brand_level.csv` |
-| Table 6: moderation | `code/30_study2_moderation.R` | `tables/table6_moderation.csv` |
-| Table 7: integration x messaging | `code/30_study2_moderation.R` | `tables/table7_interaction.csv` |
-| Table A.1: control brands | `code/10_descriptives.R` | `tables/tableA1_control_brands.csv` |
-| Table A.4a: number of topics (recomputed) | `code/05_lda_model_selection.py` | `tables/tableA4a_lda_model_selection.csv` |
-| Tables A.4b and A.4c: LDA | `code/04_lda_topics.py` | `tables/tableA4b_lda_top_terms.csv`, `tableA4c_lda_topic_shares.csv` |
-| Figure A.5: sustainability mentions | `code/11_figures_descriptive.py` | `figures/figureA5_sustainability_mentions.jpg` |
-| Table A.6: full TWFE output | `code/20_twfe_did.R` | `tables/tableA6_twfe.csv` |
-| Table A.7: without low-volume controls | `code/24_synthdid_lowvol.R` | `tables/tableA7_synthdid_excl_lowvol.csv` |
-| Tables A.8a and A.8b: raw change scores | `code/31_study2_raw_change.R` | `tables/tableA8a_…`, `tableA8b_…` |
+| Table 1: treatment sample | `code/4_descriptives/1_descriptives.R` | `tables/table1_treatment_sample.csv` |
+| Table 2: outcomes by group and period | `code/4_descriptives/1_descriptives.R` | `tables/table2_descriptives.csv` |
+| Figure 1: pre vs post outcomes | `code/4_descriptives/2_figures_descriptive.py` | `figures/figure1_before_after.jpg` |
+| Figure 2: LDA topics | `code/3_text_analysis/1_lda_topics.py`, needs review text | `figures/figure2_lda_topics.jpg` |
+| Figure 3: rating by event time | `code/5_study1_did/7_figures_synthdid.py` | `figures/figure3_event_time_rating.jpg` |
+| Table 3: three estimators | `code/5_study1_did/1_twfe_did.R`, `2_callaway_santanna.R`, `4_synthdid.R` + `6_synthdid_pool_thesis_se.R` | `tables/tableA6_twfe.csv`, `table3_callaway_santanna.csv`, `table3_synthdid_pooled_thesis_se.csv` |
+| Figure 4: synthetic DiD by brand | `code/5_study1_did/4_synthdid.R` + `5_study1_did/7_figures_synthdid.py` | `figures/figure4_synthdid_by_brand.jpg` |
+| Figure 5: C&S event study | `code/5_study1_did/3_cs_event_study.R` | `figures/figure5_cs_event_study_rating.jpg` |
+| Figure 6: pre-launch fit | `code/5_study1_did/4_synthdid.R` + `5_study1_did/7_figures_synthdid.py` | `figures/figure6_pretrend_fit.jpg` |
+| Table 4: synthetic DiD by segment | `code/5_study1_did/4_synthdid.R` + `6_synthdid_pool_thesis_se.R` | `tables/table4_synthdid_by_segment_thesis_se.csv` |
+| Table 5: brand-level changes | `code/6_study2_moderation/2_raw_change.R` | `tables/table5_brand_level.csv` |
+| Table 6: moderation | `code/6_study2_moderation/1_moderation.R` | `tables/table6_moderation.csv` |
+| Table 7: integration x messaging | `code/6_study2_moderation/1_moderation.R` | `tables/table7_interaction.csv` |
+| Table A.1: control brands | `code/4_descriptives/1_descriptives.R` | `tables/tableA1_control_brands.csv` |
+| Table A.4a: number of topics (recomputed) | `code/3_text_analysis/2_lda_model_selection.py` | `tables/tableA4a_lda_model_selection.csv` |
+| Tables A.4b and A.4c: LDA | `code/3_text_analysis/1_lda_topics.py` | `tables/tableA4b_lda_top_terms.csv`, `tableA4c_lda_topic_shares.csv` |
+| Figure A.5: sustainability mentions | `code/4_descriptives/2_figures_descriptive.py` | `figures/figureA5_sustainability_mentions.jpg` |
+| Table A.6: full TWFE output | `code/5_study1_did/1_twfe_did.R` | `tables/tableA6_twfe.csv` |
+| Table A.7: without low-volume controls | `code/5_study1_did/5_synthdid_lowvol.R` | `tables/tableA7_synthdid_excl_lowvol.csv` |
+| Tables A.8a and A.8b: raw change scores | `code/6_study2_moderation/2_raw_change.R` | `tables/tableA8a_…`, `tableA8b_…` |
 
-Tables A.2 and A.3 are inputs, not results. They are in `code/02_score_reviews.py` and `data/treatment_brands_moderators.csv`. The discount values in A.3 are computed from 210 hand-collected price pairs by `code/07_discount_depth.py`. The VADER robustness claim in Section 4.2.1 is checked by `code/06_vader_cutoff_check.py`.
+Tables A.2 and A.3 are inputs, not results. They are in `code/2_data_preparation/1_score_reviews.py` and `data/treatment_brands_moderators.csv`. The discount values in A.3 are computed from 210 hand-collected price pairs by `code/2_data_preparation/3_discount_depth.py`. The VADER robustness claim in Section 4.2.1 is checked by `code/3_text_analysis/3_vader_cutoff_check.py`.
 
 ## Reproduce
 
@@ -114,7 +114,7 @@ pip install -r requirements.txt
 bash run_all.sh     # about 2 hours, mostly the synthetic DiD
 ```
 
-`run_all.sh` runs the scripts in order. [`code/README.md`](code/README.md) explains each step and the three estimators.
+`run_all.sh` runs the scripts in order, stage by stage. [`code/README.md`](code/README.md) explains each step and the three estimators.
 
 ## Repository layout
 
@@ -122,12 +122,19 @@ bash run_all.sh     # about 2 hours, mostly the synthetic DiD
 ├── README.md                  this page
 ├── thesis/                    the thesis PDF
 ├── data/                      public data + codebook
-├── code/                      numbered scripts, run in order (see code/README.md)
-│   └── 01_data_collection/    Trustpilot scrapers
+├── code/                      one folder per stage (see code/README.md)
+│   ├── 1_data_collection/     Trustpilot scrapers
+│   ├── 2_data_preparation/    review scores, public dataset, discount values
+│   ├── 3_text_analysis/       LDA topic model, VADER robustness
+│   ├── 4_descriptives/        sample description
+│   ├── 5_study1_did/          Study 1: TWFE, Callaway & Sant'Anna, synthetic DiD
+│   ├── 6_study2_moderation/   Study 2: design choices
+│   ├── 7_verification/        check against the thesis PDF
+│   └── shared/                helpers used by all scripts
 ├── results/
 │   ├── tables/                every table, as CSV
 │   ├── figures/               every figure
-│   └── verification_report.md
+│   └── thesis_run/            original thesis outputs, kept for reference
 ├── run_all.sh                 runs the whole pipeline
 ├── requirements.txt, install_packages.R
 └── CITATION.cff, LICENSE

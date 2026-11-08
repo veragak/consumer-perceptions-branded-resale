@@ -1,5 +1,5 @@
 # =============================================================================
-# 30_study2_moderation.R  -  Study 2: do resale design choices explain the effect?
+# 6_study2_moderation/1_moderation.R  -  Study 2: do resale design choices explain the effect?
 #
 # Thesis: Section 4.3.3 (method), Section 5.3 (results)
 # Produces:
@@ -10,7 +10,7 @@
 #
 # Unit of analysis: the 19 treatment brands. The outcome is each brand's
 # synthetic DiD effect from Study 1 (results/tables/synthdid_by_brand.csv, so run
-# 23_synthdid.R first). This outcome already nets out the brand's own baseline and
+# 5_study1_did/4_synthdid.R first). This outcome already nets out the brand's own baseline and
 # the trend of its synthetic control, so what is left to explain is the part of
 # the change linked to the resale launch.
 #
@@ -31,7 +31,7 @@
 # same either way. With 12-15 residual degrees of freedom the t-based p-values
 # are slightly larger; no Table 6 coefficient is significant under either.
 # =============================================================================
-source("code/_common.R")
+source("code/shared/common.R")
 
 sdid <- read_csv(file.path(TABLE_DIR, "synthdid_by_brand.csv"), show_col_types = FALSE)
 mods <- load_moderators()
